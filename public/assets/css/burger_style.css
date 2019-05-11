@@ -1,7 +1,39 @@
 body {
     background: red;
+    color: blue;
 }
 
-.jumbotron {
-    color: red;
+main {
+    background: rgb(255, 255, 149);
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+#burger-pic {
+    width: 350px;
+    height: 350px;
+}
+
+#devoured-burgers {
+    background: white;
+}
+#all-burgers {
+    background: white;
+}
+#burger-holder {
+    margin: 40px 0px 0px 0px;
+}
+
+#submit-btn {
+    background: yellow;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+}
+#enter-text {
+    height: 50px;
+    width: 200px;
 }

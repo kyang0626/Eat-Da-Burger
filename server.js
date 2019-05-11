@@ -7,7 +7,7 @@ var PORT = process.env.PORT || 8080;
 var app = express();
 
 // grab all the files in public folder
-app.use(express.static(__dirname + "/public"));
+app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({ extended: false}));
 
