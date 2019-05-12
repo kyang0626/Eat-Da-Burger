@@ -2,6 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
+        <label id="burger-label" for="all-burgers">Burgers:</label>
         {{#each burgers}}
         {{#unless this.devoured}}
         <div id="burger-holder">
@@ -23,13 +24,16 @@
         </form>
       </div>
       <div class="col-lg-4">
+        <label id="devoured-holder" for="devoured-burgers">Devoured Burgers:</label>
         {{#each burgers}}
         {{#if this.devoured}}
-        <input id="devoured-burgers" class="form-control-plaintext" type="text" placeholder="{{this.id}}. {{this.burger_name}}" readonly>
+        <div id="burger-holder">
+          <div id="devoured-burgers">{{this.id}}. {{this.burger_name}}</div>
+        </div>
         {{/if}}
         {{/each}}
       </div>
 
       <div>
-    </div>
+      </div>
 </main>
