@@ -13,7 +13,13 @@ var burger = {
     updateOne: function (id, cb) {
         orm.updateOne("burgers", id, cb);
         
-    }
+    },
+     deleteOne: function(condition, cb) {
+    orm.deleteOne("burgers", condition, function(res) {
+      cb(res);
+    });
+  }
+
 };
 
 module.exports = burger;

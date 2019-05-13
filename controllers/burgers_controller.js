@@ -26,4 +26,10 @@ router.get("/", function(req, res) {
     });
   });
 
+  router.delete("/burgers/delete", function(req, res) {
+    burger.deleteOne(req.body.burger_name, function(result) {
+      res.redirect("/");
+    })
+  });
+
 module.exports = router;

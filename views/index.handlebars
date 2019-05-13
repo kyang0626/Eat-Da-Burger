@@ -12,6 +12,9 @@
           <input type="hidden" name="burger_id" type="text" value={{this.id}}>
           <button type="submit"> Devour It!</button>
         </form>
+        <form action="burgers/delete/{{this.id}}?_method=DELETE" method="POST">
+          <button type="deleteBtn">Throw me away!</button>
+        </form>
         {{/unless}}
         {{/each}}
       </div>
