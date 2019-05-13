@@ -27,6 +27,10 @@
 2. Add the burger
 3. Devour it
 
+![Alt Text](/public/images/delete-method.gif)
+
+* You can also DELETE the burger you added before devouring it.
+
 ## Building the App
 The project uses MySql, Express, Handlebars, Node.JS, and ORM (Object Relational Mapping) to query data and create routes between the user and server. The app uses Express backend framework and Handlebars templates that generate the HTML.
 
@@ -38,3 +42,4 @@ This app uses the Model-View-Controller (MVC) layout to define how the different
 * View - Any representation of information such as a chart, diagram or table. Multiple views of the same information are                 possible, such as a bar chart for management and a tabular view for accountants.
 
 * Controller - Accepts input and converts it to commands for the model or view.
+
