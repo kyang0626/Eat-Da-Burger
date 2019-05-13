@@ -22,13 +22,13 @@ var orm = {
         cb(result);
       });
   },
-  // deleteOne: function (tableInput, condition, cb) {
-  //   connection.query("DELETE FROM "+tableInput+" WHERE id="+condition+";", 
-  //   function(err, result) {
-  //     if (err) throw err;
-  //     cb(result);
-  // });
-  // }
+  deleteOne: function (tableInput, condition, cb) {
+    connection.query("DELETE FROM "+tableInput+" WHERE id="+condition+";", 
+    function(err, result) {
+      if (err) throw err;
+      cb(result);
+  });
+  }
 
 }
 

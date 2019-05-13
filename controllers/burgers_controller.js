@@ -25,11 +25,10 @@ router.get("/", function(req, res) {
       res.redirect("/");
     });
   });
-
-  // router.delete("/burgers/delete", function(req, res) {
-  //   burger.deleteOne(req.body.burger_name, function(result) {
-  //     res.redirect("/");
-  //   })
-  // });
+  router.delete("/burgers/delete/:id", function(req, res) {
+    burger.deleteOne(req.params.id, function(result) {
+      res.redirect("/");
+    })
+  });
 
 module.exports = router;
